@@ -73,8 +73,25 @@ a:hover {
   text-decoration: none;
 }
 
+.nav-links a.is-active {
+  color: var(--accent-strong);
+  font-weight: 700;
+}
+
 .hero {
   padding: 4rem 0 3rem;
+}
+
+.page-header {
+  padding: 4rem 0 1rem;
+}
+
+.page-intro {
+  max-width: 46rem;
+}
+
+.section-first {
+  padding-top: 1.5rem;
 }
 
 .hero-grid {
@@ -226,6 +243,10 @@ h2 {
   border-radius: 20px;
   padding: 1.25rem;
   box-shadow: var(--shadow);
+}
+
+.narrow-content {
+  max-width: 48rem;
 }
 
 .content-block + .content-block {
