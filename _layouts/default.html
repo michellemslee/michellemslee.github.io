@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <nav class="site-nav" aria-label="Primary">
+          <a class="site-name" href="{{ '/index.html' | relative_url }}">Michelle Lee</a>
+          <div class="nav-links">
+            <a class="{% if page.url == '/' or page.url == '/index.html' %}is-active{% endif %}" href="{{ '/index.html' | relative_url }}">Home</a>
+            <a class="{% if page.url == '/research.html' %}is-active{% endif %}" href="{{ '/research.html' | relative_url }}">Research &amp; Publications</a>
+            <a class="{% if page.url == '/cv.html' %}is-active{% endif %}" href="{{ '/cv.html' | relative_url }}">CV</a>
+            <a class="{% if page.url == '/teaching.html' %}is-active{% endif %}" href="{{ '/teaching.html' | relative_url }}">Teaching</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    {{ content }}
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>Michelle Lee | PhD Candidate | University of Melbourne</p>
+      </div>
+    </footer>
+  </body>
+</html>
