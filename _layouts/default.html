@@ -11,7 +11,7 @@
     <div class="wrapper">
       <header>
         <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-        <p>PhD Candidate in Decision, Risk, and Financial Sciences</p>
+        <p>PhD Candidate in Decision, Risk, and Financial Sciences (UniMelb)</p>
         {% if page.url == '/' or page.url == '/index.html' %}
         <img
           class="profile-image"
@@ -25,6 +25,7 @@
             <li><a class="{% if page.url == '/research.html' %}is-active{% endif %}" href="{{ '/research.html' | relative_url }}">Research</a></li>
             <li><a class="{% if page.url == '/cv.html' %}is-active{% endif %}" href="{{ '/cv.html' | relative_url }}">CV</a></li>
             <li><a class="{% if page.url == '/teaching.html' %}is-active{% endif %}" href="{{ '/teaching.html' | relative_url }}">Teaching</a></li>
+            <li><a class="{% if page.url == '/conferences.html' %}is-active{% endif %}" href="{{ '/conferences.html' | relative_url }}">Conferences &amp; Talks</a></li>
           </ul>
         </nav>
         <p class="sidebar-note">University of Melbourne<br>Melbourne, Australia</p>
@@ -35,7 +36,7 @@
       </section>
 
       <footer>
-        <p>Michelle Lee | University of Melbourne</p>
+        <p>Michelle Lee | CBMM | University of Melbourne</p>
       </footer>
     </div>
   </body>
