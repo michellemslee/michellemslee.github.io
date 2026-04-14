@@ -79,3 +79,12 @@ body {
 .section-block + .section-block {
   margin-top: 2rem;
 }
+
+main ul ul {
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+}
+
+main ul > li {
+  margin-bottom: 0.2rem;
+}
